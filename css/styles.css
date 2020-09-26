@@ -1,0 +1,95 @@
+/*Geral*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+    color: #323232 ;
+    border: none;
+}
+
+body {
+    background: url('../img/background.jpg');
+    background-size: cover ;
+    background-position-y: -200px;
+
+}
+
+textarea:focus, input:focus {/*Tirar o foco dos campos*/
+    outline: none;
+}
+
+a, label {
+font-size: .8rem;
+}
+
+a:hover {
+    color:#08558B ;
+}
+
+/*Container Login*/
+
+#login-container {
+    background-color: #FFF;
+    width: 400px;
+    /*Centralizar*/
+    margin-left: auto; 
+    margin-right: auto;
+    padding: 30px;/*Afastar elementos das laterais*/
+    margin-top: 10vh;/*Começar a 10% da altura da tela do usuário*/
+    border-radius: 10px;/*deixar bordas redondas*/
+    text-align: center;
+}
+
+/*Formulário*/
+form {
+    /*Espaçamento entre titulo e redes sociais*/
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+label {
+    font-weight: bold;
+}
+
+label, input {
+    display: block; /*Deixar cada campo em uma linha*/
+    width: 100%;
+    text-align: left;
+}
+
+input {
+    border-bottom: 2px solid #323232;/*Deixar somente uma linha nos campos*/
+    padding: 10px;/*Espaço entre os campos*/
+    font-size: 1rem;
+    margin-bottom: 20px;/*Afastar dos elementos*/
+}
+
+input:focus {
+    border-bottom: 2px solid #08558B; /*Quando clica em um campo a linha fica azul*/
+}
+
+#forgot-password {
+    text-align: right;
+    display: block;
+}
+
+input[type="submit"] {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    height: 40px;
+    border-radius: 20px;/*Arredondar a borda do campo*/
+    margin-top: 30px;
+    color: #FFF;/*Cor da letra*/
+    background-color: #08558B;/*Cor de fundo da dentro da borda*/
+    cursor: pointer;/*Mudar o cursos ao passar pelo botão*/
+}
+
+input[type="submit"]:hover {
+    background-color: #1B223C;/*Cor ao passar o mouse*/
+    transition:  .5s; /*Tempo para escurecer ao passar o mouse*/
+}
+
